@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
     res.status(200).send({ message: "App started successfully!" })
   })
 
+// app.use('/students' , )
+
 const start = async() => {
     try {
         await connect(process.env.URL);
